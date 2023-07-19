@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MotionLayout-HomePage</string>
+    <string name="greeting">Hi!</string>
+    <string name="welcoming">Nice to meet you :D"</string>
+    <string name="secret_notification">Yay, you found secret!</string>
+    <string name="secret_message">Don\'t tell anybody about this. Just you and me</string>
+</resources>

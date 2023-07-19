@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="127dp"
+        android:alpha="0"
+        android:text="@string/greeting"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_message2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
+        android:text="@string/welcoming"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/container_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="#00455A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_emoji"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="127dp"
+        app:layout_constraintEnd_toEndOf="@+id/container_message"
+        app:layout_constraintStart_toStartOf="@+id/container_message"
+        app:layout_constraintTop_toTopOf="@+id/container_message"
+        app:srcCompat="@drawable/ic_emoji"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_secret_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/secret_notification"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/container_message"
+        app:layout_constraintStart_toStartOf="@+id/container_message"
+        app:layout_constraintTop_toBottomOf="@+id/iv_emoji" />
+
+    <TextView
+        android:id="@+id/tv_secret_message2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/secret_message"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/container_message"
+        app:layout_constraintStart_toStartOf="@+id/container_message"
+        app:layout_constraintTop_toBottomOf="@+id/tv_secret_message" />
+
+    <ImageView
+        android:id="@+id/ib_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/container_message"
+        app:layout_constraintTop_toTopOf="@+id/container_message"
+        app:srcCompat="@drawable/ic_collapse"
+        app:tint="#FFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>
